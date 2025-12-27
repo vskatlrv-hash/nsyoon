@@ -1,0 +1,20 @@
+# LaTeX build artifacts
+*.aux
+*.bcf
+*.log
+*.out
+*.run.xml
+*.toc
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+*.dvi
+*.pdf
+!sample.pdf
+
+# Editor artifacts
+.vscode/
+
+# OS artifacts
+Thumbs.db
+Desktop.ini

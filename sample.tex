@@ -1,0 +1,236 @@
+%%%%%%%%%%%%%%%%%
+% This is an sample CV template created using altacv.cls
+% (v1.7.4, 30 July 2025) written by LianTze Lim (liantze@gmail.com). Compiles with pdfLaTeX, XeLaTeX and LuaLaTeX.
+%
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+%% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
+% \documentclass[10pt,a4paper,withhyper,normalphoto]{altacv}
+
+\documentclass[10pt,a4paper,withhyper]{altacv}
+%% AltaCV uses the fontawesome5 and simpleicons packages.
+%% See http://texdoc.net/pkg/fontawesome5 and http://texdoc.net/pkg/simpleicons for full list of symbols.
+
+% Change the page layout if you need to
+\geometry{left=1.25cm,right=1.25cm,top=1.5cm,bottom=1.5cm,columnsep=1.2cm}
+
+% The paracol package lets you typeset columns of text in parallel
+\usepackage{paracol}
+
+% Change the font if you want to, depending on whether
+% you're using pdflatex or xelatex/lualatex
+% WHEN COMPILING WITH XELATEX PLEASE USE
+% xelatex -shell-escape -output-driver="xdvipdfmx -z 0" sample.tex
+\iftutex
+  % If using xelatex or lualatex:
+  \setmainfont{Roboto Slab}
+  \setsansfont{Lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\else
+  % If using pdflatex:
+  \usepackage[rm]{roboto}
+  \usepackage[defaultsans]{lato}
+  % \usepackage{sourcesanspro}
+  \renewcommand{\familydefault}{\sfdefault}
+\fi
+
+% Change the colours if you want to
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{DarkPastelRed}{HTML}{450808}
+\definecolor{PastelRed}{HTML}{8F0D0D}
+\definecolor{GoldenEarth}{HTML}{E7D192}
+\colorlet{name}{black}
+\colorlet{tagline}{PastelRed}
+\colorlet{heading}{DarkPastelRed}
+\colorlet{headingrule}{GoldenEarth}
+\colorlet{subheading}{PastelRed}
+\colorlet{accent}{PastelRed}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change some fonts, if necessary
+\renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+\renewcommand{\personalinfofont}{\footnotesize}
+\renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+\renewcommand{\cvsubsectionfont}{\large\bfseries}
+
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\cvItemMarker}{{\small\textbullet}}
+\renewcommand{\cvRatingMarker}{\faCircle}
+% ...and the markers for the date/location for \cvevent
+% \renewcommand{\cvDateMarker}{\faCalendar*[regular]}
+% \renewcommand{\cvLocationMarker}{\faMapMarker*}
+
+
+% If your CV/résumé is in a language other than English,
+% then you probably want to change these so that when you
+% copy-paste from the PDF or run pdftotext, the location
+% and date marker icons for \cvevent will paste as correct
+% translations. For example Spanish:
+% \renewcommand{\locationname}{Ubicación}
+% \renewcommand{\datename}{Fecha}
+
+
+%% Use (and optionally edit if necessary) this .tex if you
+%% want to use an author-year reference style like APA(6)
+%% for your publication list
+% \input{pubs-authoryear}
+
+%% Use (and optionally edit if necessary) this .tex if you
+%% want an originally numerical reference style like IEEE
+%% for your publication list
+\input{pubs-num}
+
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+
+\begin{document}
+\name{Namsik Yoon}
+\tagline{Bilingual Procurement \& Supply Chain Specialist}
+%% You can add multiple photos on the left or right
+\photoR{2.8cm}{Globe_High}
+% \photoL{2.5cm}{Yacht_High,Suitcase_High}
+
+\personalinfo{%
+  % Not all of these are required!
+  \email{vskatlrv@gmail.com}
+  \phone{617-775-8728}
+  \location{Austin, TX}
+  %\homepage{www.homepage.com}
+  %\linkedin{your_id}
+  %\github{your_id}
+  %\orcid{0000-0000-0000-0000}
+}
+
+\makecvheader
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+% \AtBeginEnvironment{itemize}{\small}
+
+%% Set the left/right column width ratio to 6:4.
+\columnratio{0.6}
+
+% Start a 2-column paracol. Both the left and right columns will automatically
+% break across pages if things get too long.
+\cvsection{Summary}
+\begin{quote}
+``Bilingual Procurement Associate with 6+ years of experience in supply chain operations, vendor management, and international logistics. Proven track record in cost optimization, project purchasing (\$6M+), and data-driven inventory management. Expert in bridging communication gaps between Korean and English-speaking stakeholders.''
+\end{quote}
+
+\begin{paracol}{2}
+\cvsection{Experience}
+
+\cvevent{Sales Assistant Manager (Procurement \& Project Mgmt)}{Kitz Corporation of Korea}{Aug 2019 -- Aug 2025}{Busan, South Korea}
+\begin{itemize}
+\item \textbf{Procurement \& Vendor Management:} Managed procurement and supply chain operations for 60+ international EPC projects (e.g., HEC-Shaheen \$6.0M), securing high-quality materials and aligning production/shipment schedules.
+\item \textbf{Cost Optimization:} Sourced alternative suppliers and negotiated pricing, achieving significant cost recovery and securing new awards (e.g., Orot Rabin \$266K).
+\item \textbf{Logistics \& Compliance:} Handled end-to-end export/import documentation (Invoices, Packing Lists, FTA CO) and resolved delivery delays and claims to ensure timely delivery.
+\item \textbf{Data Management:} Developed a material shipment tracking system using Excel to monitor inventory levels and prevent stockouts.
+\item \textbf{Cross-Functional Collaboration:} Partnered with Operations, Finance, and Sales teams to reconcile invoices, managing Liquidated Damages and outstanding payments.
+\end{itemize}
+
+\divider
+
+\cvevent{Intern (Sales \& Inventory Support)}{Seoul Trading USA}{July 2017 -- June 2018}{New Jersey, USA}
+\begin{itemize}
+\item \textbf{Process Automation:} Automated manual sales reporting using Microsoft Excel, significantly reducing daily work hours and improving data accuracy.
+\item \textbf{Inventory Accuracy:} Led a department-wide physical stock count to reconcile system discrepancies, resolving internal cost issues related to damaged/expired goods.
+\item \textbf{Sales Growth:} Analyzed sales data by item and category, contributing to a \textbf{5\% annual revenue increase} in 2018 and a 10\% YoY growth in Jan 2018.
+\item \textbf{Logistics Oversight:} Prevented major shipping errors (e.g., correcting destination misroutes between NY and Chicago) through meticulous verification of order details.
+\end{itemize}
+
+\divider
+
+\cvevent{Staff (Production \& Maintenance)}{JBM}{Jan 2010 -- Feb 2013}{Ulsan, South Korea}
+\begin{itemize}
+\item \textbf{Cost Reduction:} Transitioned outsourced manufacturing processes in-house, significantly reducing external production costs.
+\item \textbf{Process Efficiency:} Developed efficient production methods for CNC machinery without existing design data, reducing overall processing time.
+\item \textbf{Production Planning:} Managed production schedules and material purchasing to ensure on-time delivery.
+\end{itemize}
+
+\divider
+
+\cvevent{Manager (Restaurant Operations)}{KABORAE}{Aug 2014 -- Mar 2015}{Auckland, New Zealand}
+\begin{itemize}
+\item \textbf{Store Management:} oversaw daily operations, including inventory ordering, supplier relations, and staff scheduling.
+\item \textbf{Bilingual Service:} Provided simultaneous interpretation for supplier contracts and managed diverse customer inquiries.
+\end{itemize}
+
+\cvsection{Education}
+
+\cvevent{B.A. in Business Administration (GPA: 4.17/4.5)}{Daegu University}{2017}{South Korea}
+\begin{itemize}
+\item \textbf{Coursework:} Data Analysis, Accounting, Financial Management, Business Statistics (Achieved A+ in all quantitative courses).
+\end{itemize}
+\cvevent{B.A. in English Language \& Literature (GPA: 3.92/4.5)}{Daegu University}{2017}{South Korea}
+
+\divider
+
+\cvevent{Int'l Trade \& Business Training}{Japan Overseas Field Training}{Feb 2017}{Tokyo, Japan}
+\begin{itemize}
+\item Conducted market research at the Tokyo Gift Show and participated in trade simulation projects focusing on tariffs and logistics costs.
+\end{itemize}
+
+\medskip
+
+\cvsection{Licensure}
+\begin{itemize}
+\item Forklift Operator License (2021)
+\item Computer Application Proficiency Certificate – Level 1 (2019)
+\end{itemize}
+
+%% Switch to the right column.
+\switchcolumn
+
+
+
+\cvsection{Key Skills}
+
+\cvtag{Procurement Operations}
+\cvtag{Vendor Management}
+\cvtag{Supply Chain Logistics}
+\cvtag{Cost Negotiation}
+\cvtag{Inventory Control}
+\cvtag{Project Management}
+
+\divider\smallskip
+
+\cvtag{Microsoft Office (Excel)}
+\cvtag{ERP Systems}
+\cvtag{QuickBooks Knowledge}
+\cvtag{Import/Export Docs}
+
+\cvsection{Languages}
+
+\cvskill{Korean (Native)}{5}
+\divider
+
+\cvskill{English (Advanced)}{4.5}
+%% Supports X.5 values.
+
+\cvsection{Strengths}
+
+\cvtag{Problem-Solving}
+\cvtag{Cross-Functional Teamwork}
+\cvtag{Attention to Detail}
+\cvtag{Time Management}
+
+\cvsection{Achievements}
+
+\cvachievement{\faTrophy}{New Business Award}{Secured \$160K order for Gongju Nat'l Gas Power Plant by generating new sales opportunities.}
+
+\divider
+
+\cvachievement{\faHandshake}{Client Relationship}{Re-established business with HP valves through strategic technical meetings, leading to multiple project awards.}
+
+\end{paracol}
+\end{document}
