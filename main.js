@@ -88,12 +88,13 @@ document.addEventListener('DOMContentLoaded', () => {
     langEN.addEventListener('click', () => switchLanguage('en'));
     langKO.addEventListener('click', () => switchLanguage('ko'));
 
-    // Check for stored preference or browser language
+    // Check for stored preference, default to English
     const storedLang = localStorage.getItem('preferredLang');
     if (storedLang) {
         switchLanguage(storedLang);
-    } else if (navigator.language.startsWith('ko')) {
-        switchLanguage('ko');
+    } else {
+        // Default to English
+        switchLanguage('en');
     }
 
     // --- Scroll Reveal Animation ---
