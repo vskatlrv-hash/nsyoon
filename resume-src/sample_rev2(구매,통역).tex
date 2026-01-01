@@ -1,0 +1,212 @@
+%%%%%%%%%%%%%%%%%
+% This is an sample CV template created using altacv.cls
+% (v1.7.4, 30 July 2025) written by LianTze Lim (liantze@gmail.com). Compiles with pdfLaTeX, XeLaTeX and LuaLaTeX.
+%
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+\documentclass[10pt,letterpaper,withhyper]{altacv}
+
+% Change the page layout if you need to
+\geometry{left=1.25cm,right=1.25cm,top=1.5cm,bottom=1.5cm,columnsep=1.2cm,portrait}
+
+% The paracol package lets you typeset columns of text in parallel
+\usepackage{paracol}
+\usepackage[rm]{roboto}
+\usepackage[defaultsans]{lato}
+\renewcommand{\familydefault}{\sfdefault}
+
+% Change the colours if you want to
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{DarkPastelRed}{HTML}{450808}
+\definecolor{PastelRed}{HTML}{8F0D0D}
+\definecolor{GoldenEarth}{HTML}{E7D192}
+\colorlet{name}{black}
+\colorlet{tagline}{PastelRed}
+\colorlet{heading}{DarkPastelRed}
+\colorlet{headingrule}{GoldenEarth}
+\colorlet{subheading}{PastelRed}
+\colorlet{accent}{PastelRed}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change some fonts, if necessary
+\renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+\renewcommand{\personalinfofont}{\footnotesize}
+\renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+\renewcommand{\cvsubsectionfont}{\large\bfseries}
+
+\renewcommand{\cvItemMarker}{{\small\textbullet}}
+\renewcommand{\cvRatingMarker}{\faCircle}
+
+\input{pubs-num}
+\addbibresource{sample.bib}
+
+\begin{document}
+\name{Namsik Yoon}
+\tagline{Bilingual Procurement \& Supply Chain Specialist}
+\photoR{2.8cm}{Globe_High}
+
+\personalinfo{%
+  \email{vskatlrv@gmail.com}
+  \phone{617-775-8728}
+  \location{Austin, TX}
+  \homepage{vskatlrv-hash.github.io/nsyoon}
+}
+
+\makecvheader
+
+\columnratio{0.6}
+
+\cvsection{Professional Summary}
+\begin{quote}
+``Results-driven Bilingual Procurement \& Supply Chain Specialist with 6+ years of experience in \textbf{Purchasing Operations}, \textbf{Vendor Management}, and \textbf{Cost Optimization}. Proven track record of orchestrating global EPC projects and driving strategic sourcing initiatives. Expert in leveraging data analytics (Advanced Excel) and In-house ERP systems to optimize inventory levels and streamline cross-functional workflows. Committed to delivering operational excellence through precise execution and strategic negotiation.''
+\end{quote}
+
+\begin{paracol}{2}
+\cvsection{Experience}
+
+\cvevent{Sales Assistant Manager (Global Procurement \& Strategic Ops)}{Kitz Corporation of Korea}{Aug 2019 -- Aug 2025}{Busan, South Korea}
+
+\textbf{\underline{Purchasing Operations \& Strategic Sourcing:}}
+\begin{itemize}
+\item Orchestrated full-lifecycle purchasing operations for 60+ global EPC projects, managing order execution from RFQ issuance to final delivery.
+\item Spearheaded \textbf{\underline{Cost Optimization}} initiatives via strategic sourcing and alternative supplier discovery, achieving a \textbf{15\% cost reduction} while maintaining quality standards.
+\item Directed complex commercial negotiations, optimizing pricing structures and payment terms to improve project cash flow.
+\end{itemize}
+
+\textbf{\underline{Vendor Management \& Supply Chain Logistics:}}
+\begin{itemize}
+\item Managed critical Vendor Relationships, conducting rigorous performance evaluations on quality, lead time, and service responsiveness.
+\item Coordinated supply chain logistics with internal teams (Manufacturing, Logistics) and external partners to ensure strict adherence to Onsite Dates (MOD).
+\item \textbf{\underline{Global Stakeholder Management (Bilingual):}} Served as the primary English-Korean bridge for global clients, translating technical requirements and resolving supply chain bottlenecks; conducted 10+ overseas trips for technical supervision.
+\end{itemize}
+
+\smallskip
+\textbf{\underline{Key Project: HEC - RDMP (\$2.0M)}}
+\begin{itemize}
+\item Executed high-stakes **Claim Negotiation**, mitigating financial risk from potential Liquidated Damages (LD) by \textbf{95\%} through strategic force majeure defense and detailed documentation.
+\item Managed strategic export compliance including FTA Certificates of Origin (CO).
+\end{itemize}
+
+\smallskip
+\textbf{\underline{Key Project: S-Oil Shaheen (PKG-1)}}
+\begin{itemize}
+\item Oversaw strategic material fulfillment for the world's largest steam cracker project, aligning procurement schedules with construction critical paths.
+\end{itemize}
+
+\smallskip
+\textbf{\underline{Key Project: Orot Rabin Power Plant (Israel)}}
+\begin{itemize}
+\item Engineered a strategic **Account Management** initiative, utilizing market analysis to revive a dormant interaction and successfully re-capture the bid.
+\end{itemize}
+
+\divider
+
+\cvevent{Intern (Procurement \& Sales Ops Analyst)}{Seoul Trading USA}{July 2017 -- June 2018}{New Jersey, USA}
+
+\textbf{Inventory Data \& Process Optimization:}
+\begin{itemize}
+\item Optimized **Inventory Data Accuracy** and sales reporting workflows using **Advanced Excel**, significantly reducing manual reporting time.
+\item Supported Cross-Functional Teams (Sales, Warehouse, Finance) by analyzing product availability and sales velocity for 10,000+ SKUs.
+\item Contributed to record-breaking peak revenue (KRW 530 Billion) through data-driven insight and efficient order processing support.
+\end{itemize}
+
+\divider
+
+\cvevent{Production Operations Support}{JBM Co., Ltd. (Shipbuilding Equipment)}{Jan 2010 -- Feb 2013}{Ulsan, South Korea}
+\begin{itemize}
+\item Facilitated precision manufacturing operations for Hull Outfitting components.
+\item Coordinated material flow and inventory logistics, ensuring seamless production schedules for Hyundai Heavy Industries projects.
+\end{itemize}
+
+\divider
+
+\cvevent{Manager (Operations \& Bilingual Support)}{KABORAE}{Aug 2014 -- Mar 2015}{Auckland, New Zealand}
+\begin{itemize}
+\item Managed daily operations including inventory ordering and staff scheduling.
+\item Facilitated cross-cultural business communication and supplier interactions.
+\end{itemize}
+
+\medskip
+
+%% Switch to the right column.
+\switchcolumn
+
+\cvsection{Core Competencies}
+
+\textbf{Purchasing Operations}\\
+\cvtag{RFQ Management}
+\cvtag{Purchase Order Cycle}
+\cvtag{Vendor Relationship Mgmt}
+\cvtag{Cost Optimization}
+\cvtag{Inventory Control}
+
+\divider\smallskip
+
+\textbf{Strategic Skills}\\
+\cvtag{Price Negotiation}
+\cvtag{Risk Mitigation}
+\cvtag{Data-Driven Analysis}
+\cvtag{Cross-Functional Support}
+\cvtag{Bilingual (Eng/Kor)}
+
+\divider\smallskip
+
+\textbf{Technical Proficiency}\\
+\cvtag{In-house ERP Systems}
+\cvtag{Microsoft Excel (Advanced)}
+\cvtag{Quick Adaptability to Software}
+\cvtag{API 609 / API 598}
+
+\cvsection{Education}
+
+\cvevent{B.A. in Business Administration}{Daegu University}{2017}{GPA: 4.17/4.5}
+\begin{itemize}
+\item \textbf{Honors:} High Distinction
+\item \textbf{Scholarships:} Academic Excellence Award.
+\item \textbf{Focus:} Supply Chain Mgmt, Finance.
+\end{itemize}
+
+\divider
+
+\cvevent{B.A. in English Lang \& Lit}{Daegu University}{2017}{GPA: 3.92/4.5}
+\begin{itemize}
+\item \textbf{Rank:} 4th / 51 (Top 8\% of Dept)
+\end{itemize}
+
+\divider
+
+\cvevent{Int'l Trade Field Training}{Japan Overseas Field Training}{Feb 2017}{Tokyo}
+\begin{itemize}
+\item Logistics Cost Analysis (Korea vs Japan).
+\end{itemize}
+
+\cvevent{Working Holiday}{Kaplan Int'l English}{2014}{New Zealand}
+
+\cvsection{Key Achievements}
+
+\cvachievement{\faHandshake}{Gongju Power Plant (\$160K)}{Identified and capitalized on untargeted B2B opportunities through proactive presentation strategies.}
+
+\divider
+
+\cvachievement{\faChartLine}{Risk Mgmt Success}{Successfully defended against critical LD claims, preserving vendor margins through strategic documentation.}
+
+\divider
+
+\cvachievement{\faGlobe}{Global Revenue}{Maximized contract value by incorporating technical service fees for international supervision trips.}
+
+\cvsection{Languages}
+\cvskill{Korean (Native)}{5}
+\divider
+\cvskill{English (Fluent / OPIC AL)}{4.5}
+
+\end{paracol}
+\end{document}

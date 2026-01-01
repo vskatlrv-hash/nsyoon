@@ -1,0 +1,231 @@
+%%%%%%%%%%%%%%%%%
+% This is an sample CV template created using altacv.cls
+% (v1.7.4, 30 July 2025) written by LianTze Lim (liantze@gmail.com). Compiles with pdfLaTeX, XeLaTeX and LuaLaTeX.
+%
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+\documentclass[10pt,letterpaper,withhyper]{altacv}
+
+% Change the page layout if you need to
+\geometry{left=1.0cm,right=1.0cm,top=1.0cm,bottom=1.0cm,columnsep=1.0cm,portrait}
+
+% The paracol package lets you typeset columns of text in parallel
+\usepackage{paracol}
+\usepackage[rm]{roboto}
+\usepackage[defaultsans]{lato}
+\renewcommand{\familydefault}{\sfdefault}
+
+% Change the colours if you want to
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{DarkPastelRed}{HTML}{450808}
+\definecolor{PastelRed}{HTML}{8F0D0D}
+\definecolor{GoldenEarth}{HTML}{E7D192}
+\colorlet{name}{black}
+\colorlet{tagline}{PastelRed}
+\colorlet{heading}{DarkPastelRed}
+\colorlet{headingrule}{GoldenEarth}
+\colorlet{subheading}{PastelRed}
+\colorlet{accent}{PastelRed}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change some fonts, if necessary
+\renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+\renewcommand{\personalinfofont}{\footnotesize}
+\renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+\renewcommand{\cvsubsectionfont}{\large\bfseries}
+
+\renewcommand{\cvItemMarker}{{\small\textbullet}}
+\renewcommand{\cvRatingMarker}{\faCircle}
+
+\input{pubs-num}
+\addbibresource{sample.bib}
+
+\begin{document}
+\name{Namsik Yoon}
+\tagline{Bilingual Sales Operations \& Project Management}
+\photoR{2.8cm}{Globe_High}
+
+\personalinfo{%
+  \email{vskatlrv@gmail.com}
+  \phone{617-775-8728}
+  \location{Austin, TX}
+  \homepage{vskatlrv-hash.github.io/nsyoon}
+}
+
+\makecvheader
+
+\columnratio{0.6}
+
+\cvsection{Professional Summary}
+\begin{quote}
+``Bilingual Project Coordinator with 6+ years of experience in industrial sales operations, from quotation and technical specification review through order intake, delivery management, and global project coordination. Proven track record of managing post-order project execution for 60+ international EPC projects totaling approximately \$15M (Saudi Arabia, USA, Japan, South Korea, etc.). Expert in bridging communication between Japanese HQ, internal engineering, manufacturing, and quality teams, and global clients. Skilled in preventing claims and supporting contract success through proactive schedule management and strategic negotiation.''
+\end{quote}
+
+\begin{paracol}{2}
+\cvsection{Experience}
+
+\cvevent{Sales Assistant Manager (Sales Ops \& Project Mgmt)}{Kitz Corporation of Korea}{Aug 2019 -- Aug 2025}{Busan, South Korea}
+
+\textbf{\underline{Project Management \& Delivery Coordination:}}
+\begin{itemize}
+\item Managed post-order execution for 60+ international projects, serving as the primary liaison between EPC clients and manufacturing teams to ensure on-time delivery.
+\item Led pre-sales activities by working directly with engineering, quality, and production control teams to conduct bid reviews, cost estimations, and technical specification analysis.
+\item Led post-order document control, managing approval cycles for 15+ technical and quality documents per project (e.g., drawings, datasheets, MPR, spare parts lists, ITPs, test reports) to prevent schedule delays and downstream claims.
+\item Coordinated delivery schedules with logistics partners, ensuring compliance with strict onsite dates (MOD) for critical construction milestones.
+\item \textbf{Global Client Support (Bilingual Bridge):} Acted as the dedicated English-speaking representative for overseas clients; translated technical manuals and quality documents (Korean $\leftrightarrow$ English); conducted 10+ overseas trips for site supervision (SV) and troubleshooting, successfully billing clients for technical service fees.
+\end{itemize}
+
+\smallskip
+\textbf{\underline{Key Project: HEC - RDMP (\$2.0M)}}
+\begin{itemize}
+\item Supported pre-sales activities including quotation review, technical specification analysis, and bid documentation, contributing to successful order award.
+\item Issued and managed critical strategic documents including Shipping Documents, Strategic Goods, and FTA Certificates of Origin (CO).
+\item \textbf{Claim Resolution:} Negotiated a critical Liquidated Damages (LD) claim, achieving a \textbf{95\% reduction} in penalties by providing detailed evidence of force majeure factors, preserving project margins.
+\end{itemize}
+
+\smallskip
+\textbf{\underline{Key Project: S-Oil Shaheen (\$6.0M)}}
+\begin{itemize}
+\item Managed order fulfillment for Triple Offset Valves for the world's largest steam cracker project (PKG-1).
+\item Mitigated impact of schedule delays through proactive coordination with Hyundai E\&C, minimizing onsite construction downtime.
+\end{itemize}
+
+\smallskip
+\textbf{\underline{Key Project: SWCC - Ras Al Khair (\$900K)}}
+\begin{itemize}
+\item Coordinated supply of valves for large-scale desalination/power plant in Saudi Arabia, managing end-to-end project documentation and regulatory requirements, ensuring seamless customs clearance and on-time delivery in the Middle East.
+\end{itemize}
+
+\smallskip
+\textbf{\underline{Key Project: Orot Rabin Power Plant (\$266K)}}
+\begin{itemize}
+\item \textbf{Strategic Re-entry:} Revived a dormant business relationship through persistent market analysis and strategic communication, leading to the successful award of the Orot Rabin project and subsequent contracts (Xcel Pawnee PJ, NV Energy PJ).
+\end{itemize}
+
+\divider
+
+\cvevent{Intern (Sales Admin \& Operations Support)}{Seoul Trading USA}{July 2017 -- June 2018}{New Jersey, USA}
+
+\textbf{Sales Operations Support:}
+\begin{itemize}
+\item Coordinated sales operations for 30+ affiliate companies, serving as the bilingual interface to support order execution, data analysis, and cross-functional collaboration.
+\item Analyzed sales data to identify trends, contributing to the company's record-breaking peak revenue (KRW 530 Billion).
+\item Automated daily sales reporting processes, significantly reducing manual data entry time for the sales team.
+\end{itemize}
+
+\textbf{Affiliate Management:}
+\begin{itemize}
+\item Assisted in managing Amazon e-commerce orders and analyzing marketing data for promotional campaigns.
+\end{itemize}
+
+\divider
+
+\cvevent{Production Support Staff}{JBM Co., Ltd. (Shipbuilding \& Marine Equipment)}{Jan 2010 -- Feb 2013}{Ulsan, South Korea}
+\begin{itemize}
+\item Supported CNC Plasma machinery operations for Hull Outfitting components.
+\item Assisted in material handling and logistics coordination for Hyundai Heavy Industries shipbuilding projects.
+\item Collaborated with production teams to ensure adherence to daily manufacturing schedules.
+\end{itemize}
+
+\divider
+
+\cvevent{Manager (Restaurant Operations)}{KABORAE}{Jan 2015 -- Aug 2015}{Auckland, New Zealand}
+\begin{itemize}
+\item Managed daily restaurant operations including staff scheduling and supplies management.
+\item Provided bilingual interpretation for supplier contracts and resolved customer inquiries in a multicultural environment.
+\end{itemize}
+
+\medskip
+
+%% Switch to the right column.
+\switchcolumn
+
+\cvsection{Core Competencies}
+
+\textbf{Sales Operations}\\
+\cvtag{B2B Technical Sales Support}
+\cvtag{Field Service Supervision}
+\cvtag{Delivery Scheduling}
+\cvtag{Cross-Functional Coordination}
+\cvtag{Price \& Claim Negotiation}
+\cvtag{Key Account \& Client Relationship Mgmt}
+
+\divider\smallskip
+
+\textbf{Technical Knowledge}\\
+\cvtag{Industrial Valves (API 609 / 598)}
+\cvtag{Technical Specification \& Drawing Interpretation}
+\cvtag{Project Document, Approval \& Shipping Mgmt}
+\cvtag{CRM \& Order Management Systems}
+\cvtag{Sales Data Analysis \& Reporting}
+\cvtag{Bilingual Technical Communication (EN/KR)}
+
+\cvsection{Education}
+
+\cvevent{B.A. in Business Administration}{Daegu University}{2017}{GPA: 4.17/4.5}
+\begin{itemize}
+\item \textbf{Honors:} High Distinction
+\item \textbf{Scholarships:} Received Academic Excellence Scholarship.
+\item \textbf{Coursework:} Supply Chain Mgmt (A+), Fin. Mgmt (A+), Operations Mgmt (A+), Statistics (A+).
+\end{itemize}
+
+\divider
+
+\cvevent{B.A. in English Lang \& Lit}{Daegu University}{2017}{GPA: 3.92/4.5}
+\begin{itemize}
+\item \textbf{Class Rank:} 4th / 51 (Top 8\% of Dept)
+\end{itemize}
+
+\divider
+
+\cvevent{Int'l Trade Training}{Japan Overseas Field Training}{Feb 2017}{Tokyo, Japan}
+\begin{itemize}
+\item Comparative market research on logistics costs/tariffs (Korea vs Japan).
+\end{itemize}
+
+\cvevent{Working Holiday}{Kaplan Int'l English}{Aug 2014 -- Nov 2014}{Auckland, New Zealand}
+
+\cvsection{Certifications}
+\begin{itemize}
+
+\item \textbf{Computer Specialist L1} (Excel/DB)
+\item \textbf{Contents Marketer Level 1}
+\item \textbf{Forklift Operator License}
+\end{itemize}
+
+\cvsection{Key Achievements}
+
+\cvachievement{\faHandshake}{Gongju Power Plant (\$160K)}{Captured untargeted opportunity for valve supply; conducted company presentations to secure vendor status.}
+
+\divider
+
+\cvachievement{\faChartLine}{Claim Defense Success}{Successfully defended against LD penalties in RDMP project, negotiating a \textbf{95\% reduction} through strategic documentation and force majeure defense.}
+
+\divider
+
+\cvachievement{\faGlobe}{Global Service Revenue}{Successfully performed technical and on-site support during 10+ overseas site supervision (SV) assignments, enabling formal billing of technical service fees and generating additional revenue.}
+
+\cvsection{Activities}
+
+\cvachievement{\faMusic}{Winter Sonic Band}{Performed in Manhattan/US cities; generated \$2,800 revenue via interactive concerts.}
+
+\divider
+
+\cvachievement{\faLightbulb}{Entertainment Marketing}{Marketing strategy for K-Pop artists; achieved 437 peak viewers on live stream.}
+
+\cvsection{Languages}
+\cvskill{Korean (Native)}{5}
+\divider
+\cvskill{English (Fluent)}{4.5}
+
+\end{paracol}
+\end{document}
