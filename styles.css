@@ -1048,6 +1048,37 @@ section {
 }
 
 /* --------------------------------------------------------------------------
+   Simulator Section
+   -------------------------------------------------------------------------- */
+.simulator {
+  background: var(--color-canvas-dark);
+}
+
+.simulator-container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  background: var(--color-white);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.simulator-iframe {
+  width: 100%;
+  height: 800px;
+  border: none;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .simulator-iframe {
+    height: 600px;
+  }
+}
+
+/* --------------------------------------------------------------------------
    Utility Classes
    -------------------------------------------------------------------------- */
 .text-center {

@@ -1,0 +1,195 @@
+%%%%%%%%%%%%%%%%%
+% This is an sample CV template created using altacv.cls
+% (v1.7.4, 30 July 2025) written by LianTze Lim (liantze@gmail.com). Compiles with pdfLaTeX, XeLaTeX and LuaLaTeX.
+%
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+\documentclass[10pt,letterpaper,withhyper]{altacv}
+
+% Change the page layout if you need to
+\geometry{left=1.0cm,right=1.0cm,top=1.0cm,bottom=1.0cm,columnsep=1.0cm,portrait}
+
+% The paracol package lets you typeset columns of text in parallel
+\usepackage{paracol}
+\usepackage[rm]{roboto}
+\usepackage[defaultsans]{lato}
+\renewcommand{\familydefault}{\sfdefault}
+
+% Change the colours if you want to
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{DarkPastelRed}{HTML}{450808}
+\definecolor{PastelRed}{HTML}{8F0D0D}
+\definecolor{GoldenEarth}{HTML}{E7D192}
+\colorlet{name}{black}
+\colorlet{tagline}{PastelRed}
+\colorlet{heading}{DarkPastelRed}
+\colorlet{headingrule}{GoldenEarth}
+\colorlet{subheading}{PastelRed}
+\colorlet{accent}{PastelRed}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change some fonts, if necessary
+\renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+\renewcommand{\personalinfofont}{\footnotesize}
+\renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+\renewcommand{\cvsubsectionfont}{\large\bfseries}
+
+\renewcommand{\cvItemMarker}{{\small\textbullet}}
+\renewcommand{\cvRatingMarker}{\faCircle}
+
+\input{pubs-num}
+\addbibresource{sample.bib}
+
+\begin{document}
+\name{Namsik Yoon}
+\tagline{Sales Engineer | Industrial SaaS \& Manufacturing Value Realization}
+\photoR{2.8cm}{Globe_High}
+
+\personalinfo{%
+  \email{vskatlrv@gmail.com}
+  \phone{617-775-8728}
+  \location{Austin, TX}
+  \homepage{vskatlrv-hash.github.io/nsyoon}
+}
+
+\makecvheader
+
+\columnratio{0.6}
+
+\cvsection{Professional Summary}
+\begin{quote}
+``Sales Engineer with 6+ years in industrial manufacturing and a strong foundation in modern web development. Expert in bridging the gap between engineering reality and commercial strategy by translating complex technical constraints (Theory of Constraints, COPQ) into quantifiable financial value. Proven track record of managing \$15M+ in international EPC projects and developing custom SaaS ROI tools to demonstrate solution fit. Bridges communication between Japanese HQ, internal engineering, and global clients.''
+\end{quote}
+
+\begin{paracol}{2}
+
+\cvsection{Engineering \& Technical Projects}
+
+\cvevent{The Illusion of Infinite Returns \hfill  \normalfont\footnotesize  \faDesktop \href{https://github.com/vskatlrv-hash/dynamic-roi}{View Project}}{Industrial SaaS ROI Calculator}{Current}{Next.js 16, TypeScript, Recharts}
+\begin{itemize}
+\item Developed a forensic financial audit tool to challenge aggressive SaaS ROI claims (7,000\%) in manufacturing environments.
+\item \textbf{Technical Implementation:} Built with Next.js 16 (App Router) and TypeScript to model complex industrial variables including Cost of Poor Quality (COPQ) and Theory of Constraints (TOC).
+\item \textbf{Value Realization Model:} Designed the 'Industrial Value Realization Model (IVRM)' to calculate risk-adjusted Net Present Value (rNPV), exposing hidden costs like 'J-Curve' implementation dips and hardware amortization.
+\item Demonstrates ability to build custom technical tools for high-stakes value selling and feasibility analysis.
+\end{itemize}
+
+\vspace{1em}
+
+\cvsection{Experience}
+
+\cvevent{Sales Assistant Manager (Technical Sales \& Project Eng.)}{Kitz Corporation of Korea}{Aug 2019 -- Aug 2025}{Busan, South Korea}
+
+\textbf{\underline{Technical Solution Consulting \& Delivery:}}
+\begin{itemize}
+\item \textbf{Technical Requirement Analysis:} Reviewed complex technical specifications for 60+ international EPC projects, ensuring proposed valve solutions met strict API/ASME standards and client requirements.
+\item \textbf{Solution Architecture:} Collaborated with internal engineering teams to propose alternative technical solutions to clients, optimizing for cost and delivery constraints without compromising quality.
+\item \textbf{Technical Value Defense:} Negotiated a critical Liquidated Damages (LD) claim by providing detailed engineering evidence of force majeure impact, achieving a \textbf{95\% reduction} in penalties (\$2.0M RDMP Project).
+\item \textbf{On-site Technical Deployment:} Conducted 10+ overseas site supervision trips (Saudi Arabia, etc.) for installation support, troubleshooting, and field engineering, successfully billing technical service fees.
+\end{itemize}
+
+\smallskip
+\textbf{\underline{Key Project: HEC/HDEC/DL E\&C - S-Oil Shaheen (\$6.0M)}}
+\begin{itemize}
+\item Managed technical order fulfillment for Triple Offset Valves for the world's largest steam cracker project (PKG-1), serving as the primary technical liaison between EPC engineers and the factory.
+\end{itemize}
+
+\smallskip
+\textbf{\underline{Key Project: SWCC - Ras Al Khair (\$900K)}}
+\begin{itemize}
+\item Coordinated supply of valves for a large-scale desalination plant, managing end-to-end technical documentation (drawings, ITPs) and regulatory compliance.
+\end{itemize}
+
+\divider
+
+\cvevent{Sales Operations Analyst (Intern)}{Seoul Trading USA}{July 2017 -- June 2018}{New Jersey, USA}
+\begin{itemize}
+\item \textbf{Data-Driven Process Optimization:} Automated daily sales reporting processes using Excel/VBA, significantly reducing manual data entry time for the sales team.
+\item Analyzed sales data to identify trends, contributing to record-breaking peak revenue (\$486M).
+\end{itemize}
+
+\divider
+
+\cvevent{Production Support Staff}{JBM Co., Ltd.}{Jan 2010 -- Feb 2013}{Ulsan, South Korea}
+\begin{itemize}
+\item Operated CNC Plasma machinery for Hull Outfitting components, gaining hands-on understanding of manufacturing floor dynamics and material handling.
+\end{itemize}
+
+
+%% Switch to the right column.
+\switchcolumn
+
+\cvsection{Core Competencies}
+
+\textbf{Sales Engineering}\\
+\cvtag{Technical Value Selling}
+\cvtag{ROI Modeling}
+\cvtag{Solution Architecture}
+\cvtag{Proof of Concept (POC)}
+\cvtag{Technical Demo}
+\cvtag{Requirement Analysis}
+
+\divider\smallskip
+
+\textbf{Technical Skills}\\
+\cvtag{Next.js / React}
+\cvtag{TypeScript / JavaScript}
+\cvtag{SQL / Database Basics}
+\cvtag{Industrial Valves (API 609)}
+\cvtag{EPC Project Management}
+\cvtag{Drawing Interpretation}
+
+\cvsection{Education}
+
+\cvevent{B.A. in Business Administration}{Daegu University}{2017}{GPA: 4.17/4.5}
+\begin{itemize}
+\item \textbf{Honors:} High Distinction
+\item \textbf{Coursework:} Supply Chain Mgmt (A+), Operations Mgmt (A+), Statistics (A+).
+\end{itemize}
+
+\divider
+
+\cvevent{B.A. in English Lang \& Lit}{Daegu University}{2017}{GPA: 3.92/4.5}
+\begin{itemize}
+\item \textbf{Class Rank:} 4th / 51 (Top 8\%)
+\end{itemize}
+
+\divider
+
+\cvevent{Int'l Trade Training}{Japan Overseas Field Training}{Feb 2017}{Tokyo, Japan}
+
+\cvsection{Certifications}
+\begin{itemize}
+\item \textbf{OPIC Advanced Low} (English)
+\item \textbf{Computer Specialist L1} (Excel/DB)
+\item \textbf{Contents Marketer Level 1}
+\item \textbf{Forklift Operator License}
+\end{itemize}
+
+\cvsection{Key Achievements}
+
+\cvachievement{\faChartLine}{Claim Defense}{Defended against LD penalties in RDMP project (\textbf{95\% reduction}) via technical evidence.}
+
+\divider
+
+\cvachievement{\faGlobe}{Field Engineering}{Performed 10+ overseas site supervision assignments, generating service revenue.}
+
+\divider
+
+\cvachievement{\faCode}{SaaS Development}{Built full-stack ROI calculator to expose manufacturing cost fallacies.}
+
+\cvsection{Languages}
+\cvskill{Korean (Native)}{5}
+\divider
+\cvskill{English (Fluent)}{4.5}
+
+\end{paracol}
+\end{document}
