@@ -203,6 +203,7 @@ section {
   font-size: 1.5rem;
   font-weight: 700;
   color: var(--color-white);
+  margin-right: var(--space-lg);
 }
 
 .nav-logo span {
@@ -211,7 +212,7 @@ section {
 
 .nav-links {
   display: flex;
-  gap: var(--space-lg);
+  gap: var(--space-md);
   align-items: center;
 }
 
